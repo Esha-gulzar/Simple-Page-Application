@@ -37,19 +37,45 @@
 
   <div class="card">
     <h3>Ad Sale Prediction</h3>
-    <p>Predict sales using Linear Regression.</p>
+    <p>Scikit-learn Linear Regression model to predict sales from TV, Radio, and Newspaper ad spend.</p>
+    <div class="project-images">
+      <div class="img-wrap" style="max-width: 100%;">
+        <img src="images/ad_sales.png" alt="Ad Sale Prediction App" onclick="openLightbox(this.src)" style="width:100%;">
+        <div class="img-caption">Linear Regression Prediction App</div>
+      </div>
+    </div>
     <a href="https://github.com/Esha-gulzar/Ad_sale_pricing_predictions" target="_blank" rel="noopener noreferrer">View Project</a>
   </div>
 
   <div class="card">
     <h3>Churn Prediction</h3>
-    <p>Predict telecom customer churn.</p>
+    <p>Logistic Regression model to predict telecom customer churn with retention tips.</p>
+    <div class="project-images">
+      <div class="img-wrap">
+        <img src="images/churn.png" alt="Churn Prediction Form" onclick="openLightbox(this.src)">
+        <div class="img-caption">Input Form</div>
+      </div>
+      <div class="img-wrap">
+        <img src="images/chunrr.png" alt="Churn Prediction Result" onclick="openLightbox(this.src)">
+        <div class="img-caption">Prediction Result</div>
+      </div>
+    </div>
     <a href="https://github.com/Esha-gulzar/Churn_prediction" target="_blank" rel="noopener noreferrer">View Project</a>
   </div>
 
   <div class="card">
     <h3>Heart Disease Prediction</h3>
-    <p>Classification model using Random Forest.</p>
+    <p>Classification model using Random Forest to predict 10-year heart disease risk from patient vitals.</p>
+    <div class="project-images">
+      <div class="img-wrap">
+        <img src="images/Heart_.png" alt="Heart Disease Prediction Form" onclick="openLightbox(this.src)">
+        <div class="img-caption">Input Form</div>
+      </div>
+      <div class="img-wrap">
+        <img src="images/Heart.png" alt="Heart Disease Prediction Result" onclick="openLightbox(this.src)">
+        <div class="img-caption">Prediction Result</div>
+      </div>
+    </div>
     <a href="https://github.com/Esha-gulzar/Heart_disease_prediction" target="_blank" rel="noopener noreferrer">View Project</a>
   </div>
 
@@ -57,12 +83,12 @@
 
 <section class="skills">
   <h2>Skills</h2>
-  <p>Python  • Pandas • NumPy • Scikit-learn • Streamlit • Flask • Git</p>
+  <p>Python • SQL • Pandas • NumPy • Scikit-learn • Streamlit • Flask • Git</p>
 </section>
 
 <section class="contact">
   <h2>Contact</h2>
-  <p>Email: eshagulzar1234@gmail.com</p>
+  <p>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="187d6b70797f6d7462796a292a2b2c587f75797174367b7775">[email&#160;protected]</a></p>
   <p>Phone: +92 344 6918026</p>
 </section>
 
@@ -70,5 +96,15 @@
   <p>© 2026 Esha Gulzar</p>
 </footer>
 
-</body>
-</html>
+<!-- Lightbox -->
+<div id="lightbox">
+  <span id="lightbox-close" onclick="closeLightbox()">✕</span>
+  <img id="lightbox-img" src="" alt="Preview">
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  function openLightbox(src) {
+    document.getElementById('lightbox-img').src = src;
+    document.getElementById('lightbox').classList.add('active');
+  }
+  function closeLight
