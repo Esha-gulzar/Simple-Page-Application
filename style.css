@@ -26,20 +26,31 @@ body {
       max-width: 900px;
       margin: auto;
     }
-    .header-content{
-      display:flex;
-      align-items:center;
-      gap:25px;
-      justify-content:center;
-}
+    header {
+      color: white;
+      background: #0f172a;
+      padding: 60px 40px;
+    }
 
-    .profile-pic{
-      height:150px;
-      border-radius:20%;
-      object-fit:fill;
-      /* border:1px solid white; */
-      width:150px;
-}
+   .header-content {
+     align-items: center;
+     gap: 40px;
+     justify-content: center;
+     max-width: 900px;
+     margin: auto;
+     text-align: left;        /* ← text aligns left next to image */
+     display: flex;
+    }
+
+    .profile-pic {
+      width: 180px;
+      border-radius: 50%;      /* ← perfect circle looks most professional */
+      object-fit: cover;       /* ← fixes the stretching issue */
+      object-position: top;    /* ← keeps face centered, not cropped */
+      border: 3px solid #38bdf8;
+      height: 180px;
+      flex-shrink: 0;          /* ← prevents image from shrinking */
+    }
     h2 {
       border-left: 5px solid #38bdf8;
       padding-left: 10px;
@@ -133,3 +144,9 @@ body {
       color: white;
       margin-top: 30px;
     }
+    @media (max-width: 600px) {
+     .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+   }
