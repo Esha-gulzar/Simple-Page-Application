@@ -26,6 +26,20 @@ body {
       max-width: 900px;
       margin: auto;
     }
+    .header-content{
+      display:flex;
+      align-items:center;
+      gap:25px;
+      justify-content:center;
+}
+
+    .profile-pic{
+      height:150px;
+      border-radius:20%;
+      object-fit:fill;
+      /* border:1px solid white; */
+      width:150px;
+}
     h2 {
       border-left: 5px solid #38bdf8;
       padding-left: 10px;
